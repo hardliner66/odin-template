@@ -1,5 +1,8 @@
 #!/bin/bash
 
+workspaceFolder=$(dirname "${BASH_SOURCE[0]}")
+pushd "$workspaceFolder"
+
 update_pijul_dep() {
   local repo
   repo="$1"
